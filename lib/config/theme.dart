@@ -35,7 +35,7 @@ const tables_Color = LinearGradient(
 );
 const UnclosedBills_Color = LinearGradient(
   colors: [
-    Colors.red,
+    Color.fromARGB(255, 179, 38, 28),
     Colors.redAccent,
   ],
   begin: Alignment.topLeft,
