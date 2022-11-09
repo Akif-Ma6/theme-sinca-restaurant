@@ -14,9 +14,9 @@ class NewOrder extends StatelessWidget {
         width: (MediaQuery.of(context).size.width / 2) - 25,
         height: 110,
         decoration: BoxDecoration(
-          gradient: new_OrderColor,
+          gradient: newOrderClr,
           boxShadow: const [
-          BoxShadow_Style
+          boxShadowStyle
           ],
           borderRadius: BorderRadius.circular(12),
         ),
@@ -24,7 +24,11 @@ class NewOrder extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-         newOrder_Icon,
+         Icon(
+  Icons.restaurant,
+  color: iconsColor,
+  size: 30,
+),
             Padding(
               padding: EdgeInsets.all(4.0),
               child: Text(

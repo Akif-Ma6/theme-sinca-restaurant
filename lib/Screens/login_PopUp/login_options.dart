@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sinca_tab_order/Screens/login_PopUp/pop-up_Buttons.dart';
+import 'package:sinca_tab_order/config/theme.dart';
 
 const space = SizedBox(
   height: 5,
@@ -26,19 +27,19 @@ Future<void> showLoginPopup(BuildContext context) async {
             space,
             PopupButtons(
               icon: Icons.touch_app_outlined,
-              color: Color.fromRGBO(40, 53, 147, 1),
+              color: ipPopUpbuttonColor,
               buttonName: "Enter IP Manually",
             ),
             space,
             PopupButtons(
               icon: Icons.login_outlined,
-              color: Color.fromRGBO(102, 187, 106, 1),
+              color:loginPopUpColor, 
               buttonName: "Login",
             ),
             space,
             PopupButtons(
               icon: Icons.logout_outlined,
-              color: Color.fromARGB(255, 183, 27, 27),
+              color: loginPopUpColor,
               buttonName: "Logout",
             ),
             space,

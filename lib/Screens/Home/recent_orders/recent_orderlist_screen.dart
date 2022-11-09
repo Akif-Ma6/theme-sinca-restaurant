@@ -20,10 +20,7 @@ class RecentOrderListScreen extends StatelessWidget {
                   padding: EdgeInsets.only(top: 12, bottom: 12, left: 17, right: 7),
                   child: Text(
                     "${index}36$index",
-                    style: TextStyle(
-                      fontSize: 17,
-                      color: Color.fromRGBO(153, 153, 153, 1),
-                    ),
+                   style:Theme.of(context).textTheme.headline3
                   ),
                 ),
               ),
@@ -40,10 +37,7 @@ class RecentOrderListScreen extends StatelessWidget {
                   padding: EdgeInsets.only(top: 12, bottom: 12, left: 7, right: 7),
                   child: Text(
                     "20${index}$index-11-$index",
-                    style: TextStyle(
-                      fontSize: 17,
-                      color: Color.fromRGBO(153, 153, 153, 1),
-                    ),
+                 style:Theme.of(context).textTheme.headline3,
                     maxLines: 3,
                   ),
                 ),
@@ -59,10 +53,7 @@ class RecentOrderListScreen extends StatelessWidget {
                     "${DateTime.now().hour.toString()} : ${DateTime.now().minute.toInt() + index}",
                     maxLines: 3,
                     overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                      fontSize: 17,
-                      color: Color.fromRGBO(153, 153, 153, 1),
-                    ),
+                 style:Theme.of(context).textTheme.headline3
                   ),
                 ),
               ),
@@ -77,10 +68,7 @@ class RecentOrderListScreen extends StatelessWidget {
                     " ${87}${index} ",
                     maxLines: 3,
                     overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                      fontSize: 17,
-                      color: Color.fromRGBO(153, 153, 153, 1),
-                    ),
+                    style:Theme.of(context).textTheme.headline3
                   ),
                 ),
               ),

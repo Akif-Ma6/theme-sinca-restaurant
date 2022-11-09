@@ -43,14 +43,14 @@ class ScreenHome extends StatelessWidget {
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           "Agent : $agentID",
-                          style:  Theme.of(context).textTheme.button,
+                          style:  Theme.of(context).textTheme.bodyText1,
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           appVersion,
-                          style:  Theme.of(context).textTheme.button,
+                          style:  Theme.of(context).textTheme.bodyText1,
                         ),
                       ),
                     ],

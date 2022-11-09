@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
             },
             icon: const Icon(
               Icons.settings,
-              color:appBar_Elements_Color
+              color:appBarElementsColor
             ),
           ),
         ],

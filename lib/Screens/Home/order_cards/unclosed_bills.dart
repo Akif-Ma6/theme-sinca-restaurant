@@ -12,9 +12,9 @@ class UnclosedBills extends StatelessWidget {
         width: (MediaQuery.of(context).size.width / 2) - 25,
         height: 110,
         decoration: BoxDecoration(
-          gradient: UnclosedBills_Color,
+          gradient: unclosedBillsClr,
           boxShadow: const [
-        BoxShadow_Style
+        boxShadowStyle
           ],
           borderRadius: BorderRadius.circular(12),
         ),
@@ -22,7 +22,11 @@ class UnclosedBills extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-        UnclosedBills_Icon,
+        Icon(
+  Icons.attach_money_sharp,
+  color: iconsColor,
+  size: 30,
+),
             Padding(
               padding: EdgeInsets.all(4.0),
               child: Text(

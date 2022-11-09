@@ -14,9 +14,9 @@ class AllSales extends StatelessWidget {
         width: (MediaQuery.of(context).size.width / 2) - 25,
         height: 110,
         decoration: BoxDecoration(
-          gradient: all_SalesColor,
+          gradient: allSalesClr,
           boxShadow: const [
-            BoxShadow_Style
+            boxShadowStyle
           ],
           borderRadius: BorderRadius.circular(12),
         ),
@@ -24,7 +24,11 @@ class AllSales extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children:  [
-          AllSales_Icon,
+          Icon(
+  Icons.restaurant_menu_outlined,
+ color: iconsColor,
+  size: 30,
+),
             Padding(
               padding: EdgeInsets.all(4.0),
               child: Text(

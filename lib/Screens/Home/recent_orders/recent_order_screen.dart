@@ -19,14 +19,14 @@ class RecentOrderCard extends StatelessWidget {
             10),
         elevation: 20,
         child: Column(children: [
-          const Padding(
+           Padding(
             padding: EdgeInsets.only(top: 10, right: 20, left: 20),
             child: Text(
               "Recent Orders",
-              style: TextStyle(fontSize: 19, color: Colors.red, fontWeight: FontWeight.bold),
+              style: Theme.of(context).textTheme.bodyText2,
             ),
           ),
-          Row(children: const [
+          Row(children:  [
             Expanded(
               flex: 2,
               child: Align(
@@ -35,7 +35,7 @@ class RecentOrderCard extends StatelessWidget {
                   padding: EdgeInsets.only(top: 12, bottom: 12, left: 17, right: 7),
                   child: Text(
                     "Inv No",
-                    style: TextStyle(fontSize: 17, color: Color.fromRGBO(153, 153, 153, 1), fontWeight: FontWeight.bold),
+                    style:Theme.of(context).textTheme.headline2,
                   ),
                 ),
               ),
@@ -52,7 +52,7 @@ class RecentOrderCard extends StatelessWidget {
                   padding: EdgeInsets.only(top: 12, bottom: 12, left: 7, right: 7),
                   child: Text(
                     "Date",
-                    style: TextStyle(fontSize: 17, color: Color.fromRGBO(153, 153, 153, 1), fontWeight: FontWeight.bold),
+                    style:Theme.of(context).textTheme.headline2,
                     maxLines: 3,
                   ),
                 ),
@@ -68,7 +68,7 @@ class RecentOrderCard extends StatelessWidget {
                     "Time",
                     maxLines: 3,
                     overflow: TextOverflow.ellipsis,
-                    style: TextStyle(fontSize: 17, color: Color.fromRGBO(153, 153, 153, 1), fontWeight: FontWeight.bold),
+                   style:Theme.of(context).textTheme.headline2,
                   ),
                 ),
               ),
@@ -83,7 +83,7 @@ class RecentOrderCard extends StatelessWidget {
                     "Price",
                     maxLines: 3,
                     overflow: TextOverflow.ellipsis,
-                    style: TextStyle(fontSize: 17, color: Color.fromRGBO(153, 153, 153, 1), fontWeight: FontWeight.bold),
+                    style:Theme.of(context).textTheme.headline2,
                   ),
                 ),
               ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sinca_tab_order/config/theme.dart';
 
 class RecentOrdersLoadingScreen extends StatelessWidget {
   const RecentOrdersLoadingScreen({Key? key}) : super(key: key);
@@ -20,7 +21,7 @@ class RecentOrdersLoadingScreen extends StatelessWidget {
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: Color.fromRGBO(239, 239, 239, 1),
+                          color: recentOrdersLoadingContainerColor,
                         ),
                         margin: const EdgeInsets.only(top: 10, bottom: 5, left: 5, right: 4),
                         width: 100,
@@ -31,7 +32,7 @@ class RecentOrdersLoadingScreen extends StatelessWidget {
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: Color.fromRGBO(239, 239, 239, 1),
+                          color: recentOrdersLoadingContainerColor,
                         ),
                         margin: const EdgeInsets.only(top: 10, bottom: 5, left: 5, right: 4),
                         width: 100,
@@ -42,7 +43,7 @@ class RecentOrdersLoadingScreen extends StatelessWidget {
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: Color.fromRGBO(239, 239, 239, 1),
+                          color: recentOrdersLoadingContainerColor
                         ),
                         margin: const EdgeInsets.only(top: 10, bottom: 5, left: 5, right: 4),
                         width: 100,
@@ -53,7 +54,7 @@ class RecentOrdersLoadingScreen extends StatelessWidget {
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: Color.fromRGBO(239, 239, 239, 1),
+                          color: recentOrdersLoadingContainerColor,
                         ),
                         margin: const EdgeInsets.only(top: 10, bottom: 5, left: 5, right: 4),
                         width: 100,

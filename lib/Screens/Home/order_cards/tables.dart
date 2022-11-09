@@ -16,9 +16,9 @@ class Tables extends StatelessWidget {
         width: (MediaQuery.of(context).size.width / 2) - 25,
         height: 110,
         decoration: BoxDecoration(
-          gradient: tables_Color,
+          gradient: tablesClr,
           boxShadow: const [
-          BoxShadow_Style
+          boxShadowStyle
           ],
           borderRadius: BorderRadius.circular(12),
         ),
@@ -26,7 +26,11 @@ class Tables extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children:  [
-         tables_Icon,
+          Icon(
+  Icons.table_bar,
+  color: iconsColor,
+  size: 30,
+),
             Padding(
               padding: EdgeInsets.all(4.0),
               child: Text(

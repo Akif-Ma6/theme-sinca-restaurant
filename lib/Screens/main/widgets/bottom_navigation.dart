@@ -11,8 +11,8 @@ class BottomNavigation extends StatelessWidget {
       valueListenable: ScreenMain.selectedIndexNotifier,
       builder: (BuildContext context, int updatedIndex, Widget? _) {
         return BottomNavigationBar(
-          selectedItemColor:bottom_navigationSelection_color,
-          unselectedItemColor: bottom_navigationUnSelection_color,
+          selectedItemColor:bottomNavigationSelectionColor,
+          unselectedItemColor: bottomNavigationUnSelectionColor,
           currentIndex: updatedIndex,
           onTap: (newIndex) {
             ScreenMain.selectedIndexNotifier.value = newIndex;
